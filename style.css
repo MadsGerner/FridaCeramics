@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+/* INDEX STYLING */
+
+
+/* FORSIDE */
+
+#forside {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr;
+}
+
+.logo {
+    height: 60vh;
+}
+
+.intro_img {
+    width: 80%;
+}
+
+.intro_video img {
+    width: 30%;
+}
+
+
+
+
+/* ONEPAGE NAV */
+/* STORY */
+/* DESIGNET */
+/* BESTIL */
+/* DIT GRØNNE AFTRYK */
