@@ -17,88 +17,171 @@ article {
 
 
 
-/* FORSIDE MEDIA QURIES */
+/* HEADER - LOGO OG NAV */
 
-@media only screen and (min-width: 750px) {
-    header {
-        width: 100vw;
-        height: 40px;
-        position: relative;
-    }
+header {
+    width: 100vw;
+    height: 40px;
+    position: relative;
+}
 
-    #nav_wrapper {
-        height: 100vh;
-        background-color: aqua;
-        writing-mode: vertical-lr;
-        position: fixed;
-        right: 0;
-    }
+#nav_wrapper {
+    height: 100vh;
+    background-color: aqua;
+    writing-mode: vertical-lr;
+    position: fixed;
+    right: 0;
+}
 
-    #main_nav {
-        display: flex;
-        justify-content: space-between;
-    }
+#main_nav {
+    display: flex;
+    justify-content: space-between;
+}
 
-    .logo {
-        position: fixed;
-    }
-
-    #forside {
-        width: 100%;
-        height: 100vh;
-    }
-
-    .intro_img {
-        height: 85vh;
-        margin-left: 80px;
-    }
-
-    .intro_frida {
-        position: relative;
-        width: 100%;
-    }
-
-    .intro_video {
-        position: absolute;
-        right: 150px;
-        top: 100px;
-
-    }
-
-    .intro_video img {
-        width: 300px;
-    }
-
-    .intro_info {
-        text-align: right;
-    }
-
-    .intro_video img:last-of-type {
-        width: 100px;
-        float: right;
-    }
-
-    .pil {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-top: 8px;
-    }
-
-    .pil img {
-        width: 50px;
-    }
-
-
-    .test_images img {
-        width: 400px;
-    }
-
+.logo {
+    position: fixed;
 }
 
 
+/* FORSIDE */
+
+#forside {
+    width: 100%;
+    height: 100vh;
+}
+
+.intro_img {
+    height: 85vh;
+    margin-left: 80px;
+}
+
+.intro_frida {
+    position: relative;
+    width: 100%;
+}
+
+.intro_video {
+    position: absolute;
+    right: 150px;
+    top: 100px;
+
+}
+
+.intro_video img {
+    width: 300px;
+}
+
+.intro_info {
+    text-align: right;
+}
+
+.intro_video img:last-of-type {
+    width: 100px;
+    float: right;
+}
+
+.pil {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.pil img {
+    width: 50px;
+}
+
+
+.test_images img {
+    width: 400px;
+}
+
+
+
+
 /* ONEPAGE NAV */
+
+
+#onepage_nav {
+    padding: 0 188px 0 178px;
+    display: grid;
+
+    /* LAVES TIL BESTEMTE STØRRELSER NÅR DE ER STYLET
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+*/
+
+}
+
+.menu_bestil {
+    grid-column: 1 / 1;
+    grid-row: 1 / 3;
+
+    writing-mode: vertical-lr;
+}
+
+.menu_designet {
+    grid-column: 2 / 4;
+    grid-row: 1 / 1;
+
+}
+
+.menu_story {
+    grid-column: 2 / 3;
+    grid-row: 3 / 3;
+
+}
+
+.menu_aftryk {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+
+    text-align: right;
+}
+
 /* STORY */
 /* DESIGNET */
 /* BESTIL */
 /* DIT GRØNNE AFTRYK */
+
+
+/* PRESSE */
+
+#top {
+    display: grid;
+    grid-auto-rows: 1fr 1fr;
+    grid-gap: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+/* FAQ */
+summary {
+    font-weight: bold;
+}
+
+.empty {
+    height: 200px;
+}
+
+#faq h1 {
+    font-size: 3rem;
+}
+
+#faq {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr 1fr;
+    grid-gap: 80px;
+    max-width: 950px;
+    margin: 0 auto;
+
+}
+
+@media screen and (max-width:500px) {
+    #faq {
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 300px;
+    }
+}
