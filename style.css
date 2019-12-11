@@ -2,30 +2,99 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    position: relative;
+    width: 100vw;
+}
+
+article {
+    padding: 0 100px;
+}
+
 /* INDEX STYLING */
 
 
-/* FORSIDE */
 
-#forside {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 3fr;
+
+/* FORSIDE MEDIA QURIES */
+
+@media only screen and (min-width: 750px) {
+    header {
+        width: 100vw;
+        height: 40px;
+        position: relative;
+    }
+
+    #nav_wrapper {
+        height: 100vh;
+        background-color: aqua;
+        writing-mode: vertical-lr;
+        position: fixed;
+        right: 0;
+    }
+
+    #main_nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo {
+        position: fixed;
+    }
+
+    #forside {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .intro_img {
+        height: 85vh;
+        margin-left: 80px;
+    }
+
+    .intro_frida {
+        position: relative;
+        width: 100%;
+    }
+
+    .intro_video {
+        position: absolute;
+        right: 150px;
+        top: 100px;
+
+    }
+
+    .intro_video img {
+        width: 300px;
+    }
+
+    .intro_info {
+        text-align: right;
+    }
+
+    .intro_video img:last-of-type {
+        width: 100px;
+        float: right;
+    }
+
+    .pil {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 8px;
+    }
+
+    .pil img {
+        width: 50px;
+    }
+
+
+    .test_images img {
+        width: 400px;
+    }
+
 }
-
-.logo {
-    height: 60vh;
-}
-
-.intro_img {
-    width: 80%;
-}
-
-.intro_video img {
-    width: 30%;
-}
-
-
 
 
 /* ONEPAGE NAV */
