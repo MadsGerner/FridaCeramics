@@ -2,6 +2,8 @@
     box-sizing: border-box;
 }
 
+/* INDEX STYLING */
+
 body {
     margin: 0;
     position: relative;
@@ -12,8 +14,25 @@ article {
     padding: 0 100px;
 }
 
-/* INDEX STYLING */
 
+/* TEMA/SEKTION STYLING */
+
+.sektion_bg {
+    background-image: url(images/placeholder_bg_1200.png);
+    width: 1200px;
+    height: 450px;
+    margin: 0 auto;
+}
+
+.sektion_bg h1 {
+    text-align: center;
+    padding-top: 200px;
+    margin: 0;
+}
+
+.sektion_bg h2 {
+    text-align: center;
+}
 
 
 
@@ -52,7 +71,7 @@ header {
 
 .intro_img {
     height: 85vh;
-    margin-left: 80px;
+    margin-left: 130px;
 }
 
 .intro_frida {
@@ -117,30 +136,93 @@ header {
 .menu_bestil {
     grid-column: 1 / 1;
     grid-row: 1 / 3;
-
+    text-decoration: none;
     writing-mode: vertical-lr;
+    font-size: 5rem;
 }
 
 .menu_designet {
     grid-column: 2 / 4;
     grid-row: 1 / 1;
-
+    text-decoration: none;
+    font-size: 5rem;
 }
 
 .menu_story {
     grid-column: 2 / 3;
     grid-row: 3 / 3;
-
+    text-decoration: none;
+    font-size: 5rem;
 }
 
 .menu_aftryk {
     grid-column: 3 / 4;
     grid-row: 2 / 3;
-
     text-align: right;
+    text-decoration: none;
+    font-size: 5rem;
 }
 
 /* STORY */
+
+#story {
+    width: 100%;
+    height: 100vh;
+}
+
+#story h3 {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    font-size: 2rem;
+}
+
+#story_wrapper {
+    display: grid;
+    grid-template-columns: 690px 345px;
+    padding: 40px 40px 40px 60px;
+}
+
+.story_img1 {
+    width: 95%;
+}
+
+.story_txt1 {
+    padding-left: 20px;
+}
+
+.wrap_right {
+    float: right;
+}
+
+.wrap_left {
+    position: relative;
+    width: 100%;
+
+}
+
+.story_img2 {
+    width: 100%;
+}
+
+.story_txt2 {
+    position: absolute;
+    left: 20px;
+    top: 170px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* DESIGNET */
 /* BESTIL */
 /* DIT GRØNNE AFTRYK */
