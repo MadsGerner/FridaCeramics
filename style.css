@@ -346,6 +346,45 @@ header {
 
 /* DIT GRØNNE AFTRYK */
 
+#aftryk {
+    width: 100%;
+}
+
+.aftryk_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 3fr 3fr 3fr;
+    position: relative;
+}
+
+.aftryk_bg {
+    width: 100%;
+    z-index: -2;
+}
+
+.aftryk_img {
+    position: absolute;
+    top: 150px;
+    left: 200px;
+    z-index: -1;
+    width: 50%;
+}
+
+.txt1 {
+    grid-column: 3/3;
+    grid-row: 1/1;
+}
+
+.txt2 {
+    grid-column: 1/1;
+    grid-row: 2/2;
+}
+
+.txt3 {
+    grid-column: 2/2;
+    grid-row: 3/3;
+}
+
 
 /* PRESSE */
 
