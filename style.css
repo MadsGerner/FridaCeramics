@@ -193,6 +193,10 @@ header {
     width: 95%;
 }
 
+.overgang {
+    transition: ease 0.2s;
+}
+
 .story_txt1 {
     padding-left: 20px;
 }
