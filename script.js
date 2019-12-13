@@ -10,6 +10,7 @@ const liste = document.querySelector(".liste");
 
 function start() {
 
+    bestilChangeImg();
     changeImg();
     getJson();
 }
@@ -44,6 +45,34 @@ function changeImg4() {
 
     setTimeout(changeImg, 1000);
 }
+
+
+
+function bestilChangeImg() {
+    document.querySelector(".loop").src = "image/glas_blaa.jpg";
+
+    //    document.querySelector(".story_img1").classList.add(".overgang");
+    setTimeout(bestilChangeImg1, 1000);
+}
+
+function bestilChangeImg1() {
+    document.querySelector(".loop").src = "image/glas_gul.jpg";
+
+    setTimeout(bestilChangeImg2, 1000);
+}
+
+function bestilChangeImg2() {
+    document.querySelector(".loop").src = "image/glas_pink.jpg";
+
+    setTimeout(bestilChangeImg3, 1000);
+}
+
+function bestilChangeImg3() {
+    document.querySelector(".loop").src = "image/glas_sort.jpg";
+
+    setTimeout(bestilChangeImg, 1000);
+}
+
 
 
 async function getJson() {
