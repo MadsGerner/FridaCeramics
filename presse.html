@@ -35,9 +35,8 @@
     </article>
 
 
-    <template id="presse_temp">
-
-        <img src="" alt="">
+    <template>
+        <img class="billede" src="" alt="">
         <h2 class="titel"></h2>
         <a class="link" href=""></a>
 
@@ -66,7 +65,7 @@
 
         let presse = [];
 
-        const template = document.querySelector("#presse_temp");
+        const template = document.querySelector("template");
         const visning = document.querySelector(".visning");
 
 
@@ -82,7 +81,9 @@
                 console.log(presse);
                 const klon = template.cloneNode(true).content;
 
-                klon.querySelector(".titel").textContent = presse.overskrift;
+                klon.querySelector(".billede").src = presse.billede.guid;
+
+                klon.querySelector(".titel").textContent = presse.title.rendered;
 
                 klon.querySelector(".link").href = presse.link;
 
