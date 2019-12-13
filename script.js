@@ -6,13 +6,12 @@ let forhandlere = [];
 const skabelon = document.querySelector("template");
 const liste = document.querySelector(".liste");
 
-const presseUrl = "";
+
 
 function start() {
 
     changeImg();
     getJson();
-    hentJson();
 }
 
 function changeImg() {
@@ -55,7 +54,6 @@ async function getJson() {
 }
 
 
-
 function vis() {
     forhandlere.forEach(forhandler => {
         console.log(forhandlere);
@@ -65,8 +63,4 @@ function vis() {
         klon.querySelector(".forhandler_adresse").textContent = forhandler.forhandler_addresse;
         liste.appendChild(klon);
     });
-}
-
-async function hentJson() {
-
 }
