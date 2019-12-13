@@ -353,8 +353,10 @@ header {
 .aftryk_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 3fr 3fr 3fr;
+    grid-template-rows: auto;
+    padding: 40px 60px;
     position: relative;
+    height: 100%;
 }
 
 .aftryk_bg {
@@ -365,24 +367,28 @@ header {
 .aftryk_img {
     position: absolute;
     top: 150px;
-    left: 200px;
+    right: 200px;
     z-index: -1;
     width: 50%;
 }
 
 .txt1 {
-    grid-column: 3/3;
-    grid-row: 1/1;
+    grid-column: 3;
+    grid-row: 1;
+    padding-top: 100px;
 }
 
 .txt2 {
-    grid-column: 1/1;
-    grid-row: 2/2;
+    grid-column: 1;
+    grid-row: 2;
+    padding-top: 60px;
 }
 
 .txt3 {
-    grid-column: 2/2;
-    grid-row: 3/3;
+    grid-column: 2 /3;
+    grid-row: 3;
+    padding-top: 60px;
+    justify-self: end;
 }
 
 
@@ -423,21 +429,76 @@ summary {
 
 footer {
     display: grid;
-    grid-template-columns: 150px 600px 1fr 1fr;
+    grid-template-columns: 2fr 3fr 1fr 1fr;
     grid-template-rows: 1fr;
+    width: 100%;
 }
 
+.some {
+    padding:
+}
+
+
+
 .insta img {
-    width: 20px;
+    width: 10%;
 }
 
 .fb img {
-    width: 15px;
+    width: 5%;
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:750px) {
     #faq {
         grid-template-columns: repeat(1, 1fr);
         max-width: 300px;
     }
+
+    /*  GENEREL MEDIA Q  */
+
+    article {
+        padding: 0 40px;
+    }
+
+    .logo {
+        width: 5%;
+    }
+
+
+    /*  #FORSIDE MEDIA Q  */
+
+    #forside {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 100%;
+    }
+
+    .video_wrap {
+        grid-column: 1;
+        width: 100%;
+    }
+
+
+    .intro_img {
+        /*        position: relative;*/
+        width: 100%;
+        margin-left: 0;
+        height: 100%;
+    }
+
+
+    .intro_video {
+        right: auto;
+        top: auto;
+    }
+
+    .pil {
+        display: none;
+    }
+
+    .menu_story {
+        display: none;
+    }
+
+
 }
