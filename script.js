@@ -6,34 +6,44 @@ let forhandlere = [];
 const skabelon = document.querySelector("template");
 const liste = document.querySelector(".liste");
 
+const presseUrl = "";
+
 function start() {
 
-    //changeImg();
-    //
-    //function changeImg() {
-    //    document.querySelector(".images_loop").src = "images/atryk_loop_ig.png";
-    //
-    //    setTimeout(changeImg1, 2000);
-    //}
-    //
-    //
-    //function changeImg1() {
-    //    document.querySelector(".images_loop").src = "images/designet_wrapper_bg.png";
-    //
-    //    setTimeout(changeImg2, 2000);
-    //}
-    //
-    //function changeImg2() {
-    //    document.querySelector(".images_loop").src = "images/story_img1.png";
-    //
-    //    setTimeout(changeImg, 2000);
-    //}
-
-
+    changeImg();
     getJson();
+    hentJson();
+}
 
+function changeImg() {
+    document.querySelector(".story_img1").src = "image/sugeroer2.jpg";
 
+    //    document.querySelector(".story_img1").classList.add(".overgang");
+    setTimeout(changeImg1, 1000);
+}
 
+function changeImg1() {
+    document.querySelector(".story_img1").src = "image/sugeroer5.jpg";
+
+    setTimeout(changeImg2, 1000);
+}
+
+function changeImg2() {
+    document.querySelector(".story_img1").src = "image/sugeroer4.jpg";
+
+    setTimeout(changeImg3, 1000);
+}
+
+function changeImg3() {
+    document.querySelector(".story_img1").src = "image/sugeroer3.jpg";
+
+    setTimeout(changeImg4, 1000);
+}
+
+function changeImg4() {
+    document.querySelector(".story_img1").src = "image/sugeroer1.jpg";
+
+    setTimeout(changeImg, 1000);
 }
 
 
@@ -44,6 +54,8 @@ async function getJson() {
 
 }
 
+
+
 function vis() {
     forhandlere.forEach(forhandler => {
         console.log(forhandlere);
@@ -53,4 +65,8 @@ function vis() {
         klon.querySelector(".forhandler_adresse").textContent = forhandler.forhandler_addresse;
         liste.appendChild(klon);
     });
+}
+
+async function hentJson() {
+
 }
