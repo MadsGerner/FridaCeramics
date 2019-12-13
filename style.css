@@ -392,7 +392,7 @@ a.menu_story:hover {
 .bestil_forhandler {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 2fr 2fr;
+    grid-template-rows: 2fr;
     padding: 40px;
     position: relative;
     width: 100%;
@@ -410,13 +410,12 @@ a.menu_story:hover {
 
 .images_loop {
     position: absolute;
-    bottom: 110px;
-    right: 40px;
+    top: 210px;
+    right: 0px;
+    width: 80%;
 }
 
-.loop {
-    width: 60%;
-}
+.loop {}
 
 .bestil_straw {
     width: 80%;
