@@ -10,15 +10,20 @@ article {
 }
 
 .logo {
+    position: fixed;
     width: 5%;
+}
+
+img {
+    width: 100%;
 }
 
 /* FONT STYLING */
 
 h1 {
     color: transparent;
-    -webkit-text-stroke: 3px #6F8D75;
-    font-size: 7rem;
+    -webkit-text-stroke: 1px #6F8D75;
+    font-size: 3rem;
     font-family: 'Be Vietnam';
     font-weight: bold;
 }
@@ -56,6 +61,28 @@ p {
 
 /* TEMA/SEKTION STYLING */
 
+.sektion_bg {
+    background-image: url(images/placeholder_bg_1200.png);
+    width: 100%;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sektion_bg h1 {
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 0px;
+    margin: 0;
+}
+
+.sektion_bg h2 {
+    text-align: center;
+    margin: 0;
+}
+
+
+
 /* HEADER - LOGO OG NAV */
 
 /*  #FORSIDE  */
@@ -72,24 +99,45 @@ p {
 }
 
 
-.intro_img {
-    margin-left: 0;
-    height: 100%;
-}
-
-
 .intro_video {
     right: auto;
     top: auto;
 }
 
+.intro_signatur {
+    width: 30%;
+}
+
+
 .pil {
     display: none;
 }
 
-.menu_story {
+#onepage_nav {
     display: none;
 }
+
+.forhandler_formular {
+    background-color: #6F8D75;
+    border: none;
+    width: 210px;
+    height: 70px;
+    margin: 100px auto 10px;
+}
+
+.insta img {
+    width: 6%;
+    padding: 20px 0px 20px;
+}
+
+
+.fb img {
+    width: 3%;
+    padding: 20px 0px 20px;
+}
+
+
+
 
 /* FAQ MOBILE/IPAD */
 
@@ -104,7 +152,7 @@ p {
 @media screen and (min-width:800px) {
 
 
-    /* INDEX STYLING */
+    /* INDEX STYLING MEDIA Q */
 
     body {
         margin: 0;
@@ -136,8 +184,15 @@ p {
         margin: 0;
     }
 
+    /* FONT STYLING MEDIA Q */
 
-    /* HEADER - LOGO OG NAV */
+    h1 {
+        -webkit-text-stroke: 3px #6F8D75;
+        font-size: 7rem;
+
+    }
+
+    /* HEADER - LOGO OG NAV MEDIA Q */
 
     header {
         width: 100vw;
@@ -198,6 +253,7 @@ p {
     }
 
     .intro_img {
+        width: auto;
         height: 85vh;
         margin-left: 130px;
     }
@@ -246,7 +302,7 @@ p {
 
 
 
-    /* ONEPAGE NAV */
+    /* ONEPAGE NAV ONLY WEB */
 
 
     #onepage_nav {
@@ -502,11 +558,7 @@ p {
 
     .forhandler_formular {
         grid-column: 1 /4;
-        background-color: #6F8D75;
-        border: none;
-        width: 210px;
-        height: 70px;
-        margin: 100px auto 10px;
+
     }
 
     .forhandler_formular a {
@@ -632,6 +684,7 @@ p {
     }
 
 
+    /*
     .insta img {
         width: 10%;
         padding: 20px 0px 20px;
@@ -642,6 +695,7 @@ p {
         width: 5%;
         padding: 20px 0px 20px;
     }
+*/
 
     .email {
         padding: 20px 0px 5px 20px;
