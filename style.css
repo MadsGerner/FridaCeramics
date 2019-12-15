@@ -2,6 +2,68 @@
     box-sizing: border-box;
 }
 
+
+@media screen and (max-width:750px) {
+    #faq {
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 300px;
+    }
+
+    /*  GENEREL MEDIA Q  */
+
+    article {
+        padding: 0 40px;
+    }
+
+    .logo {
+        width: 5%;
+    }
+
+
+    /*  #FORSIDE MEDIA Q  */
+
+    #forside {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 100%;
+    }
+
+    .video_wrap {
+        grid-column: 1;
+        width: 100%;
+    }
+
+
+    .intro_img {
+        /*        position: relative;*/
+        width: 100%;
+        margin-left: 0;
+        height: 100%;
+    }
+
+
+    .intro_video {
+        right: auto;
+        top: auto;
+    }
+
+    .pil {
+        display: none;
+    }
+
+    .menu_story {
+        display: none;
+    }
+
+
+}
+
+
+
+
+
+
+
 /* INDEX STYLING */
 
 body {
@@ -438,10 +500,6 @@ a.menu_story:hover {
     padding: 60px 0px 60px;
 }
 
-.forhandler_formular {
-    background-color: #6F8D75;
-    font: white;
-}
 
 
 
@@ -561,7 +619,6 @@ footer {
 .insta img {
     width: 10%;
     padding: 20px 0px 20px;
-    justify-content: right;
 }
 
 
@@ -571,68 +628,9 @@ footer {
 }
 
 .email {
-    padding: 20px 0px 20px 20px;
-    font-family: 'Be Vietnam';
-    color: #6F8D75;
-    text-decoration: none;
-
+    padding: 5px 0px 5px 20px;
 }
 
 .copyright {
     padding: 5px 0px 5px 80px;
-}
-
-@media screen and (max-width:750px) {
-    #faq {
-        grid-template-columns: repeat(1, 1fr);
-        max-width: 300px;
-    }
-
-    /*  GENEREL MEDIA Q  */
-
-    article {
-        padding: 0 40px;
-    }
-
-    .logo {
-        width: 5%;
-    }
-
-
-    /*  #FORSIDE MEDIA Q  */
-
-    #forside {
-        display: grid;
-        grid-template-columns: 1fr;
-        height: 100%;
-    }
-
-    .video_wrap {
-        grid-column: 1;
-        width: 100%;
-    }
-
-
-    .intro_img {
-        /*        position: relative;*/
-        width: 100%;
-        margin-left: 0;
-        height: 100%;
-    }
-
-
-    .intro_video {
-        right: auto;
-        top: auto;
-    }
-
-    .pil {
-        display: none;
-    }
-
-    .menu_story {
-        display: none;
-    }
-
-
 }
