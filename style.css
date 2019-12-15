@@ -506,7 +506,23 @@ a.menu_story:hover {
 /* FAQ */
 summary {
     font-weight: bold;
+    font-family: 'Be Vietnam';
+    text-transform: uppercase;
+
 }
+
+summary:hover {
+    color: #6F8D75;
+    cursor: pointer;
+}
+
+
+#faq p {
+    color: black;
+    font-family: 'Be Vietnam';
+}
+
+
 
 .empty {
     height: 200px;
@@ -514,6 +530,7 @@ summary {
 
 #faq h1 {
     font-size: 3rem;
+    font-family: 'Be Vietnam';
 }
 
 #faq {
@@ -533,20 +550,27 @@ footer {
     grid-template-columns: 2fr 3fr 1fr 1fr;
     grid-template-rows: 1fr;
     width: 100%;
-    color: #F3F2F1;
-}
-
-.some {
-    padding:
+    background-color: #F3F2F1;
 }
 
 
 .insta img {
     width: 10%;
+    padding: 20px 0px 20px;
 }
+
 
 .fb img {
     width: 5%;
+    padding: 20px 0px 20px;
+}
+
+.email {
+    padding: 5px 0px 5px 20px;
+}
+
+.copyright {
+    padding: 5px 0px 5px 80px;
 }
 
 @media screen and (max-width:750px) {
