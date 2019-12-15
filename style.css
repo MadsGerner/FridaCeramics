@@ -13,6 +13,50 @@ article {
     width: 5%;
 }
 
+/* FONT STYLING */
+
+h1 {
+    color: transparent;
+    -webkit-text-stroke: 3px #6F8D75;
+    font-size: 7rem;
+    font-family: 'Be Vietnam';
+    font-weight: bold;
+}
+
+h2,
+h3 {
+    font-family: 'Be Vietnam';
+    color: #6F8D75;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+h4 {
+    color: transparent;
+    -webkit-text-stroke: 1px #6F8D75;
+    font-size: 2rem;
+    font-family: 'Be Vietnam';
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+figcaption {
+    font-family: 'Be Vietnam';
+    color: #6F8D75;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+p {
+    font-family: 'Be Vietnam';
+    color: #6F8D75;
+    font-weight: 500;
+}
+
+/* TEMA/SEKTION STYLING */
+
+/* HEADER - LOGO OG NAV */
 
 /*  #FORSIDE  */
 
@@ -68,45 +112,6 @@ article {
 
     article {
         padding: 0 100px;
-    }
-
-    h1 {
-        color: transparent;
-        -webkit-text-stroke: 3px #6F8D75;
-        font-size: 7rem;
-        font-family: 'Be Vietnam';
-        font-weight: bold;
-    }
-
-    h2,
-    h3 {
-        font-family: 'Be Vietnam';
-        color: #6F8D75;
-        text-transform: uppercase;
-        font-weight: 500;
-    }
-
-    h4 {
-        color: transparent;
-        -webkit-text-stroke: 1px #6F8D75;
-        font-size: 2rem;
-        font-family: 'Be Vietnam';
-        font-weight: bold;
-        text-transform: uppercase;
-    }
-
-    figcaption {
-        font-family: 'Be Vietnam';
-        color: #6F8D75;
-        text-transform: uppercase;
-        font-weight: 500;
-        font-size: 0.8rem;
-    }
-
-    p {
-        font-family: 'Be Vietnam';
-        color: #6F8D75;
-        font-weight: 500;
     }
 
     /* TEMA/SEKTION STYLING */
@@ -467,23 +472,6 @@ article {
 
     }
 
-    .forhandler_formular {
-        background-color: #6F8D75;
-        border: none;
-        width: 30vh;
-        height: 10vh;
-
-
-    }
-
-    .forhandler_formular a {
-        color: white;
-        font-family: 'Be Vietnam';
-        font-weight: 500;
-        text-decoration: none;
-        font-size: 1.2rem;
-
-    }
 
     .bestil_forhandler img {
         width: 50%;
@@ -510,6 +498,23 @@ article {
         padding: 60px 0px 60px;
     }
 
+
+    .forhandler_formular {
+        grid-column: 1 /4;
+        background-color: #6F8D75;
+        border: none;
+        width: 210px;
+        height: 70px;
+        margin: 100px auto 10px;
+    }
+
+    .forhandler_formular a {
+        color: white;
+        font-family: 'Be Vietnam';
+        font-weight: 500;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
 
 
 
@@ -548,7 +553,6 @@ article {
     .txt1 {
         grid-column: 3;
         grid-row: 1;
-        padding-top: 100px;
     }
 
     .txt2 {
@@ -558,10 +562,11 @@ article {
     }
 
     .txt3 {
-        grid-column: 2 /3;
+        grid-column: 3;
         grid-row: 3;
         padding-top: 60px;
         justify-self: end;
+        color: #AC5364;
     }
 
 
