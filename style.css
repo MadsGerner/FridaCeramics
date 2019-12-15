@@ -405,6 +405,20 @@ p {
         width: 70%;
     }
 
+
+    .journey_beskrivelse {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: auto;
+        padding-left: 40px;
+        grid-gap: 20px;
+    }
+
+    .journey_beskrivelse h4 {
+        grid-column: span 3;
+    }
+
+
     .designet_straw {
         width: 70%;
         display: block;
@@ -436,24 +450,11 @@ p {
     .designet_video_wrap {
         display: flex;
         justify-content: flex-end;
+        display: inherit;
+        padding: 80px 0px 20px;
     }
 
-    .designet_video {
-        padding: 80px 0 60px;
-        width: 80%;
-    }
 
-    .designet_beskrivelse {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-auto-rows: auto;
-        padding-left: 40px;
-        grid-gap: 20px;
-    }
-
-    .designet_beskrivelse h4 {
-        grid-column: span 3;
-    }
 
 
     /* BESTIL */
