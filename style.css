@@ -14,20 +14,20 @@ article {
     width: 5%;
 }
 
-.logo:hover {
-
-}
+.logo:hover {}
 
 img {
     width: 100%;
 }
+
+.designet_video_wrap {}
 
 /* FONT STYLING */
 
 h1 {
     color: transparent;
     -webkit-text-stroke: 1px #6F8D75;
-    font-size: 3rem;
+    font-size: 4rem;
     font-family: 'Be Vietnam';
     font-weight: bold;
 }
@@ -502,9 +502,9 @@ p {
         padding-top: 30px;
     }
 
-    .deisgnet_citat {
+    .designet_citat {
         text-align: center;
-        padding-top: 400px;
+        padding-top: 90%;
     }
 
     .designet_video_wrap {
