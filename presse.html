@@ -77,15 +77,17 @@
         }
 
         function visPresse() {
+            visning.innerHTML = "";
+
             presse.forEach(pres => {
                 console.log(presse);
                 const klon = template.cloneNode(true).content;
 
-                klon.querySelector(".billede").src = presse.billede.guid;
+                klon.querySelector(".billede").src = pres.billede[0].guid;
 
-                klon.querySelector(".titel").textContent = presse.title.rendered;
-
-                klon.querySelector(".link").href = presse.link;
+                //                klon.querySelector(".titel").textContent = presse.title.rendered;
+                //
+                // klon.querySelector(".link").href = presse.link;
 
                 visning.appendChild(klon);
             });
