@@ -38,17 +38,17 @@
 
 
             <div class="intro_wrap">
-                <div class="intro_portraet">
+                <figure class="intro_portraet">
                     <img src="image/frida_portraet.png" alt="frida_portraet">
 
                     <p class="intro_info"> KUNSTHÅNDVÆRKER <br> FRIDACERAMICS@GMAIL.COM </p>
                     <img class="intro_signatur" src="images/underskrift.png" alt="signature">
-                </div>
+                </figure>
             </div>
 
-            <div class="pil">
+            <figure class="pil">
                 <img src="images/pil.svg" alt="pil">
-            </div>
+            </figure>
 
         </section>
 
@@ -122,7 +122,9 @@
 
             <img class="journey_bg1" src="image/olie_i_vand.jpg" alt="æstetisk kunst">
 
-            <p class="journey_intro"> Sugerørene formes i ler og laves i forskellige farver. <br> De skal igennem flere stadier før de kan blive til et drikkebart stykke brugskunst. </p>
+            <div class="journey_intro">
+                <p>Før at sugerørene kan blive til, skal leret igennem flere faser.</p>
+            </div>
 
             <div class="journey_wrap">
 
@@ -136,10 +138,9 @@
         </section>
         <h4> Process</h4>
         <section class="journey_beskrivelse">
-
-            <p class="txt"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus corporis dignissimos facere deserunt exercitationem voluptate neque unde iste eos, repellat sit, nulla, adipisci at, incidunt placeat voluptatem quod tempore in!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus corporis dignissimos facere deserunt exercitationem voluptate neque unde iste eos, repellat sit, nulla, adipisci at, incidunt placeat voluptatem quod tempore in!</p>
-            <p class="txt"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit at error expedita, cum sunt, ea ipsam eligendi repudiandae placeat ab dicta modi saepe voluptas voluptates earum voluptatum minima recusandae soluta!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus corporis dignissimos facere deserunt exercitationem voluptate neque unde iste eos, repellat sit, nulla, adipisci at, incidunt placeat voluptatem quod tempore in!</p>
-            <p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos numquam velit beatae voluptas porro aliquid illum commodi ducimus laudantium nostrum cum, a odio corporis, tenetur quasi iusto ab. Nemo, obcaecati.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus corporis dignissimos facere deserunt exercitationem voluptate neque unde iste eos, repellat sit, nulla, adipisci at, incidunt placeat voluptatem quod tempore in!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus corporis dignissimos facere deserunt exercitationem voluptate neque unde iste eos, repellat sit, nulla, adipisci at, incidunt placeat voluptatem quod tempore in!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus corporis dignissimos facere deserunt exercitationem voluptate neque unde iste eos, repellat sit, nulla, adipisci at, incidunt placeat voluptatem quod tempore in!</p>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit at error expedita, cum sunt, ea ipsam eligendi repudiandae placeat ab dicta modi saepe voluptas voluptates earum voluptatum minima recusandae soluta!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus corporis dignissimos facere deserunt exercitationem voluptate neque unde iste eos, repellat sit, nulla, adipisci at, incidunt placeat voluptatem quod tempore in!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos numquam velit beatae voluptas porro aliquid illum commodi ducimus laudantium nostrum cum, a odio corporis, tenetur quasi iusto ab. Nemo, obcaecati.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus corporis dignissimos facere deserunt exercitationem voluptate neque unde iste eos, repellat sit, nulla, adipisci at, incidunt placeat voluptatem quod tempore in!</p>
         </section>
 
 
@@ -155,14 +156,8 @@
 
             <figure class="many_straws">
                 <img src="image/many_straws.png" alt="many straws">
-                <figcaption>
-                    <h3> “Hvert sugerør er et håndlavet unikaprodukt. Det tager ca. 12 minutter at producere bare ét sugerør.” </h3>
-                </figcaption>
-
+                <h3> “Hvert sugerør er et håndlavet unikaprodukt. Det tager ca. 12 minutter at producere bare ét sugerør.” </h3>
             </figure>
-
-
-
         </section>
 
 
@@ -173,8 +168,12 @@
     <article id="bestil">
 
         <template>
-            <h3 class="forhandler_navn"></h3>
-            <p class="forhandler_adresse"></p>
+            <div class="forhandler_navn">
+                <h3></h3>
+            </div>
+            <div class="forhandler_adresse">
+                <p></p>
+            </div>
         </template>
 
         <section class="sektion_bg">
@@ -251,4 +250,6 @@
 
 
     <script src="script.js"></script>
-</body></html>
+</body>
+
+</html>
