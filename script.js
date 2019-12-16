@@ -9,7 +9,7 @@ const liste = document.querySelector(".liste");
 
 
 function start() {
-
+    designChangeImg();
     bestilChangeImg();
     changeImg();
     getJson();
@@ -72,6 +72,26 @@ function bestilChangeImg3() {
 
     setTimeout(bestilChangeImg, 1000);
 }
+
+
+function designChangeImg() {
+    document.querySelector(".design_loop").src = "image/blad_skygge.jpg";
+
+    setTimeout(designChangeImg1, 1500);
+}
+
+function designChangeImg1() {
+    document.querySelector(".design_loop").src = "image/bladskygge_2.jpg";
+
+    setTimeout(designChangeImg2, 1500);
+}
+
+function designChangeImg2() {
+    document.querySelector(".design_loop").src = "image/bladskygge_3.jpg";
+
+    setTimeout(designChangeImg, 1500);
+}
+
 
 
 
