@@ -28,15 +28,17 @@
 
     <article id="top">
         <h1>PRESSE</h1>
-        <section id="knapper"> <button id="alle">ALLE</button>
-            <button id="medier">MEDIER</button>
-            <button id="sociale">SOCIALE MEDIER</button>
-            <button id="designmanual">DESIGNMANUAL</button>
+        <section id="knapper">
+            <button class="filter filter_valgt" data-kategori="alle">ALLE</button>
+            <button class="filter" data-kategori="Artikler">ARTIKLER</button>
+            <button class="filter" data-kategori="Video">VIDEO</button>
+            <button class="filter" data-kategori="Podcat">PODCAST</button>
+            <button class="filter" data-kategori="designmanual">DESIGNMANUAL</button>
         </section>
 
     </article>
 
-<div class="visning"></div>
+    <div class="visning"></div>
 
 
     <template id="presseTemplate">
@@ -78,6 +80,7 @@
             presse = await response.json();
             console.log(presse);
             visPresse();
+            knapperVirker();
         }
 
         function visPresse() {
@@ -85,16 +88,39 @@
 
             presse.forEach(pres => {
 
-                const klon = template.cloneNode(true).content;
+                if (filter == "alle" || filter == pres.kategori) {
 
-                klon.querySelector(".billede").src = pres.billede.guid;
+                    const klon = template.cloneNode(true).content;
 
-                klon.querySelector(".titel").textContent = pres.title.rendered;
+                    klon.querySelector(".billede").src = pres.billede.guid;
 
-                klon.querySelector(".link").href = pres.link;
+                    klon.querySelector(".titel").textContent = pres.title.rendered;
 
-                visning.appendChild(klon);
+                    klon.querySelector(".link").href = pres.link;
+
+                    visning.appendChild(klon);
+                }
             });
+
+        }
+
+        function knapperVirker() {
+            // får alle knapper til at virke
+            document.querySelectorAll(".filter").forEach(elm => {
+                elm.addEventListener("click", filtrering);
+            })
+        }
+
+        function filtrering() {
+            filter = this.dataset.kategori;
+
+            // knapperne skifter farve
+            document.querySelectorAll(".filter").forEach(elm => {
+                elm.classList.remove("filter_valgt");
+            })
+            this.classList.add("filter_valgt");
+
+            visPresse();
         }
     </script>
 </body></html>
