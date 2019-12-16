@@ -84,6 +84,7 @@ p {
     font-family: 'Be Vietnam';
     color: #6F8D75;
     font-weight: 500;
+
 }
 
 figcaption {
@@ -732,7 +733,14 @@ figcaption {
         padding-top: 20px;
         margin: 0;
         padding-right: 230px;
+    }
 
+    .txt2 a {
+        text-decoration: none;
+    }
+
+    .txt2 a:hover {
+        color: #AC5364
     }
 
 
