@@ -47,6 +47,7 @@ h4 {
     font-family: 'Be Vietnam';
     font-weight: bold;
     text-transform: uppercase;
+    margin: 0;
 }
 
 figcaption {
@@ -187,7 +188,7 @@ p {
     /* TEMA/SEKTION STYLING */
 
     .sektion_bg {
-        background-image: url(images/placeholder_bg_1200.png);
+        background-image: url(image/sektion_bg.jpg);
         width: 100%;
         height: 450px;
         background-repeat: no-repeat;
@@ -386,7 +387,7 @@ p {
         font-size: 6rem;
         color: #6F8D75;
         padding-left: 5px;
-        padding-bottom: 20px;
+        padding-bottom: 50px;
 
     }
 
@@ -412,6 +413,7 @@ p {
         font-size: 5rem;
         color: transparent;
         -webkit-text-stroke: 1px #6F8D75;
+        line-height: 2;
     }
 
     .menu_aftryk {
@@ -434,26 +436,28 @@ p {
         /*    height: 100vh;*/
     }
 
-    #story h3 {
+    h3 {
         text-align: center;
         width: 70%;
         margin: auto;
         font-size: 1.5rem;
-        padding: 25px;
+        padding: 50px;
     }
+
+
 
 
     #story_wrapper {
         display: grid;
         grid-template-columns: 2fr 1fr;
         grid-template-rows: auto;
-        padding: 40px 40px 40px 60px;
+        padding: 0px 40px 40px 0px;
         /*    height: 100vh;*/
         /*    position: relative;*/
     }
 
     .story_img1 {
-        width: 70%;
+        width: 90%;
     }
 
     .overgang {
@@ -461,7 +465,7 @@ p {
     }
 
     .story_txt1 {
-        padding-left: 20px;
+
         text-transform: uppercase;
         font-size: 0.8rem;
     }
@@ -476,15 +480,25 @@ p {
     }
 
     .story_img2 {
-        width: 80%;
+        width: 130%;
         opacity: 50%;
+        padding-right: 15px;
     }
 
     .story_txt2 {
         position: absolute;
-        left: 5px;
-        top: 170px;
-        padding: 30px 40px 0px 40px;
+        left: 15px;
+        top: 125px;
+        font-size: 1.1rem;
+        width: 115%;
+    }
+
+    .story_text2 h4 {
+        margin: auto;
+    }
+
+    #story h3 {
+        font-size: 1.2rem;
     }
 
 
@@ -497,34 +511,39 @@ p {
     .designet_journey {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        padding: 40px 40px 40px 60px;
+        grid-template-rows: 2fr;
+        padding: 50px 0px 40px 0px;
         position: relative;
     }
 
     .journey_bg1 {
-        width: 60%;
+        width: 120%;
     }
 
     .journey_bg2 {
         width: 100%;
+
     }
 
     .journey_wrap {
         width: 100%;
         grid-column: 2/2;
-        grid-row: 3 /3;
+
     }
 
     .journey_intro {
         text-transform: uppercase;
+        padding-left: 250px;
+        width: 100%;
+        margin: 0px;
+
     }
 
     .journey_img {
         position: absolute;
-        left: 170px;
-        top: 170px;
-        width: 70%;
+        left: 220px;
+        top: 60px;
+        width: 50%;
     }
 
 
@@ -532,12 +551,8 @@ p {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-auto-rows: auto;
-        padding-left: 40px;
         grid-gap: 20px;
-    }
-
-    .journey_beskrivelse h4 {
-        grid-column: span 3;
+        padding-bottom: 50px;
     }
 
 
@@ -550,24 +565,37 @@ p {
 
     .designet_wrapper {
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-auto-rows: auto;
-        padding: 40px 60px;
+        padding-bottom: 50px;
+
     }
 
-    .designet_img {
-        width: 80%;
-        padding-top: 100px;
-    }
 
     .designet_txt {
         padding-top: 30px;
     }
 
-    .designet_citat {
-        text-align: center;
-        padding-top: 90%;
+    .designet_img_txt {
+        width: 90%;
     }
+
+    .many_straws {
+        width: 100%;
+    }
+
+    figure {
+        margin: 0;
+    }
+
+    .many_straws h3 {
+        padding: 0px;
+
+    }
+
+
+
+
 
 
 
