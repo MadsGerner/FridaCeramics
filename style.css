@@ -160,6 +160,15 @@ p {
     max-width: 300px;
 }
 
+/* PRESSE MOBILE/IPAD */
+
+#presse .visning {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+}
+
+.visning {}
 
 
 @media screen and (min-width:800px) {
@@ -663,11 +672,67 @@ p {
 
     #top {
         display: grid;
-        grid-auto-rows: 1fr 1fr;
+        grid-template-rows: 1fr;
         grid-gap: 10px;
         justify-content: center;
         text-align: center;
+        padding-bottom: 20px;
     }
+
+    #top h1 {
+        margin: 0;
+    }
+
+    .visning {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+
+    }
+
+    /*
+    #presseTemplate {
+        padding 0 200px;
+    }
+*/
+
+    #presse {
+        position: relative;
+
+        /*        width: 100%;*/
+    }
+
+    #presse .billede {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+
+    #presse .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    #presse:hover .billede {
+        opacity: 0.3;
+    }
+
+    #presse:hover .middle {
+        opacity: 1;
+        cursor: pointer;
+    }
+
+
+
 
     /* FAQ */
     summary {

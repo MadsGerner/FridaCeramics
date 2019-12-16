@@ -31,19 +31,23 @@
         <section id="knapper"> <button id="alle">ALLE</button>
             <button id="medier">MEDIER</button>
             <button id="sociale">SOCIALE MEDIER</button>
-            <button id="designmanual">DESIGNMANUAL</button></section>
+            <button id="designmanual">DESIGNMANUAL</button>
+        </section>
+
     </article>
 
+<div class="visning"></div>
 
-    <template>
-        <img class="billede" src="" alt="">
-        <h2 class="titel"></h2>
-        <a class="link" href=""></a>
 
+    <template id="presseTemplate">
+        <article id="presse">
+            <img class="billede" src="" alt="">
+            <div class="middle">
+                <h2 class="titel"></h2>
+                <a class="link" href=""></a>
+            </div>
+        </article>
     </template>
-
-    <div class="visning"></div>
-
 
 
 
@@ -65,7 +69,7 @@
 
         let presse = [];
 
-        const template = document.querySelector("template");
+        const template = document.querySelector("#presseTemplate");
         const visning = document.querySelector(".visning");
 
 
