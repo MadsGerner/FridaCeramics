@@ -9,12 +9,6 @@ article {
     padding: 0 40px;
 }
 
-.logo {
-    position: fixed;
-    width: 5%;
-}
-
-.logo:hover {}
 
 img {
     width: 100%;
@@ -89,6 +83,16 @@ p {
 
 /* HEADER - LOGO OG NAV */
 
+
+.logo {
+    position: fixed;
+    width: 5%;
+}
+
+.logo:hover {}
+
+
+
 /*  #FORSIDE  */
 
 #forside {
@@ -118,7 +122,13 @@ p {
 }
 
 #onepage_nav {
-    display: none;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#onepage_nav a {
+    text-decoration: none;
+    color: #6F8D75;
 }
 
 .forhandler_formular {
@@ -171,7 +181,7 @@ p {
 .visning {}
 
 .filter_valgt {
-    color:  #6F8D75;
+    color: #6F8D75;
 }
 
 
