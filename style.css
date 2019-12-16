@@ -300,12 +300,44 @@ p {
         width: 100%;
         display: flex;
         justify-content: center;
-        margin-top: 8px;
+        bottom: 8px;
+        animation-name: puls;
+        animation-duration: .9s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate;
+        position: absolute;
     }
 
     .pil img {
         width: 50px;
     }
+
+    @keyframes puls {
+        0% {
+            transform: translateY(-.2vw);
+        }
+
+        100% {
+            transform: translateY(1vw);
+        }
+    }
+
+    .pil:hover {
+        animation-name: pulsStop;
+    }
+
+    @keyframes pulsStop {
+        0% {
+            transform: translateY(0vw);
+        }
+
+        100% {
+            transform: translateY(0vw);
+        }
+    }
+
 
 
     .test_images img {
