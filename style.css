@@ -97,13 +97,13 @@ p {
     height: 100%;
 }
 
-.video_wrap {
+.intro_wrap {
     grid-column: 1;
     width: 100%;
 }
 
 
-.intro_video {
+.intro_portraet {
     right: auto;
     top: auto;
 }
@@ -274,10 +274,21 @@ p {
         height: 100vh;
     }
 
-    .intro_img {
+    /* .intro_img {
         width: auto;
         height: 85vh;
         margin-left: 130px;
+    }*/
+
+    .video_wrap {
+        display: flex;
+        justify-content: flex-end;
+        display: inherit;
+
+    }
+
+    video {
+        width: 100%;
     }
 
     .intro_frida {
@@ -285,14 +296,14 @@ p {
         width: 100%;
     }
 
-    .intro_video {
+    .intro_portraet {
         position: absolute;
         right: 150px;
         top: 100px;
 
     }
 
-    .intro_video img {
+    .intro_portraet img {
         width: 300px;
     }
 
@@ -300,7 +311,7 @@ p {
         text-align: right;
     }
 
-    .intro_video img:last-of-type {
+    .intro_portraet img:last-of-type {
         width: 100px;
         float: right;
     }
@@ -440,7 +451,7 @@ p {
     }
 
     .story_img1 {
-        width: 95%;
+        width: 70%;
     }
 
     .overgang {
@@ -454,25 +465,24 @@ p {
     }
 
     .wrap_right {
-        /*    float: right;*/
+        width: 100%;
     }
 
     .wrap_left {
         position: relative;
-        width: 100%;
-
+        width: 90%;
     }
 
     .story_img2 {
-        width: 100%;
+        width: 80%;
         opacity: 50%;
     }
 
     .story_txt2 {
         position: absolute;
-        left: 20px;
+        left: 5px;
         top: 170px;
-        padding: 30px;
+        padding: 30px 40px 0px 40px;
     }
 
 
@@ -556,14 +566,6 @@ p {
         text-align: center;
         padding-top: 90%;
     }
-
-    .designet_video_wrap {
-        display: flex;
-        justify-content: flex-end;
-        display: inherit;
-        padding: 0px 0px 10px 310px;
-    }
-
 
 
 
