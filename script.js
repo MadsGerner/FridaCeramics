@@ -74,6 +74,26 @@ function bestilChangeImg3() {
 }
 
 
+function designChangeImg() {
+    document.querySelector(".designet_img_txt").src = "image/blad_skygge.jpg";
+
+    setTimeout(designChangeImg1, 1000);
+}
+
+function designChangeImg1() {
+    document.querySelector(".designet_img_txt").src = "image/glas_gul.jpg";
+
+    setTimeout(designChangeImg2, 1000);
+}
+
+function designChangeImg2() {
+    document.querySelector(".designet_img_txt").src = "image/glas_pink.jpg";
+
+    setTimeout(designChangeImg3, 1000);
+}
+
+
+
 
 async function getJson() {
     const response = await fetch(url);
