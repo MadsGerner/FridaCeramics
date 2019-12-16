@@ -34,7 +34,6 @@ h2 {
     font-family: 'Be Vietnam';
     color: #6F8D75;
     text-transform: uppercase;
-
 }
 
 
@@ -47,7 +46,6 @@ h3 {
     font-size: 1.5rem;
     padding: 50px;
 }
-
 
 
 h4 {
@@ -76,7 +74,6 @@ h6 {
     font-family: 'Be Vietnam';
     color: #6F8D75;
     margin: 0;
-
 }
 
 
@@ -84,7 +81,6 @@ p {
     font-family: 'Be Vietnam';
     color: #6F8D75;
     font-weight: 500;
-
 }
 
 figcaption {
@@ -98,7 +94,7 @@ figcaption {
 /* TEMA/SEKTION STYLING */
 
 .sektion_bg {
-    background-image: url(images/placeholder_bg_1200.png);
+    background-image: url(image/section_baggrund.png);
     width: 100%;
     height: 450px;
     background-repeat: no-repeat;
@@ -164,10 +160,6 @@ figcaption {
     grid-template-columns: 1fr;
 }
 
-/*#onepage_nav a {
-    text-decoration: none;
-    color: #6F8D75;
-}*/
 
 .forhandler_formular {
     background-color: #6F8D75;
@@ -224,11 +216,9 @@ figcaption {
     color: #6F8D75;
 }
 
+/* ------- MEDIA QUERY DESKTOP VERSION -------------*/
 
 @media screen and (min-width:800px) {
-
-
-    /* INDEX STYLING MEDIA Q */
 
     body {
         margin: 0;
@@ -238,10 +228,10 @@ figcaption {
         padding: 0 200px;
     }
 
-    /* TEMA/SEKTION STYLING */
+    /* ---------------- TEMA OG SECTIONS STYLING -------- */
 
     .sektion_bg {
-        /*background-image: url(image/sektion_bg.jpg);*/
+        background-image: url(image/section_baggrund.png);
         width: 100%;
         height: 450px;
         background-repeat: no-repeat;
@@ -260,7 +250,7 @@ figcaption {
         margin: 0;
     }
 
-    /* FONT STYLING MEDIA Q */
+    /* ------------------ FONT STYLING --------------- */
 
     h1 {
         -webkit-text-stroke: 2px #6F8D75;
@@ -268,7 +258,7 @@ figcaption {
 
     }
 
-    /* HEADER - LOGO OG NAV MEDIA Q */
+    /* ------------ HEADER, LOGO OG NAV------------  */
 
     header {
         width: 100vw;
@@ -321,11 +311,16 @@ figcaption {
 
 
 
-    /* FORSIDE */
+    /* ------------------ FORSIDE ---------------------- */
 
     #forside {
         width: 100%;
         height: 95vh;
+    }
+
+    .intro_frida {
+        position: relative;
+        width: 100%;
     }
 
     .video_wrap {
@@ -339,23 +334,12 @@ figcaption {
         height: 90%;
     }
 
-    .intro_frida {
-        position: relative;
-        width: 100%;
-    }
 
     .intro_portraet {
         position: absolute;
         right: -50px;
         top: 100px;
     }
-
-
-    .intro_portraet img:last-of-type {
-        width: 100px;
-        float: right;
-    }
-
 
     .intro_portraet img {
         width: 280px;
@@ -365,6 +349,10 @@ figcaption {
         text-align: right;
     }
 
+    .intro_portraet img:last-of-type {
+        width: 100px;
+        float: right;
+    }
 
     .pil {
         width: 100%;
@@ -409,60 +397,45 @@ figcaption {
     }
 
 
-    .test_images img {
-        width: 400px;
-    }
 
-
-
-    /* ONEPAGE NAV ONLY WEB */
+    /*------------ NAVIGATION (SECTIONS MENU)---------- */
 
 
     #onepage_nav {
         padding: 0 188px 0 178px;
         display: grid;
-
-        /* LAVES TIL BESTEMTE STØRRELSER NÅR DE ER STYLET
-
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-*/
-
     }
 
     .menu_bestil {
         grid-column: 1 / 1;
         grid-row: 1 / 3;
-        text-decoration: none;
-        writing-mode: vertical-lr;
         font-family: 'Be Vietnam';
         font-weight: bolder;
+        text-decoration: none;
+        writing-mode: vertical-lr;
         font-size: 6rem;
         color: #6F8D75;
         padding-left: 5px;
         padding-bottom: 50px;
-
     }
 
 
     .menu_designet {
         grid-column: 2 / 4;
         grid-row: 1 / 1;
-        text-decoration: none;
         font-family: 'Be Vietnam';
+        text-decoration: none;
         font-size: 7rem;
         color: transparent;
         -webkit-text-stroke: 3px #6F8D75;
         line-height: 0.6;
-
-
     }
 
     .menu_story {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
-        text-decoration: none;
         font-family: 'Be Vietnam';
+        text-decoration: none;
         font-size: 5rem;
         color: transparent;
         -webkit-text-stroke: 1px #6F8D75;
@@ -472,9 +445,9 @@ figcaption {
     .menu_aftryk {
         grid-column: 3 / 4;
         grid-row: 2 / 3;
+        font-family: 'Be Vietnam';
         text-align: right;
         text-decoration: none;
-        font-family: 'Be Vietnam';
         font-weight: 600;
         font-size: 5rem;
         color: #6F8D75;
@@ -482,11 +455,10 @@ figcaption {
         padding: 0px 10px 20px 0px;
     }
 
-    /* STORY */
+    /* -------------- SECTION: STORY ---------------- */
 
     #story {
         width: 100%;
-        /*    height: 100vh;*/
     }
 
 
@@ -495,8 +467,10 @@ figcaption {
         grid-template-columns: 2fr 1fr;
         grid-template-rows: auto;
         padding: 0px 40px 40px 0px;
-        /*    height: 100vh;*/
-        /*    position: relative;*/
+    }
+
+    .wrap_right {
+        width: 100%;
     }
 
     .story_img1 {
@@ -507,47 +481,33 @@ figcaption {
         transition: ease 0.2s;
     }
 
-    .story_txt1 {
-
-        text-transform: uppercase;
-        font-size: 0.8rem;
-    }
-
-    .wrap_right {
-        width: 100%;
-    }
 
     .wrap_left {
         position: relative;
         width: 90%;
     }
 
-    .story_img2 {
+    .story_ler {
         width: 130%;
         opacity: 50%;
         padding-right: 15px;
     }
 
-    .story_txt2 {
+    .story_bag_kunst {
         position: absolute;
         left: 15px;
         top: 125px;
         width: 115%;
     }
 
-    .story_text2 h4 {
-        margin: auto;
-    }
 
-
-
-    /* DESIGNET */
+    /*---------- SECTION: DESIGNET -------------------- */
 
     #designet {
         width: 100%;
     }
 
-    .designet_journey {
+    .design_process {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 2fr;
@@ -555,34 +515,38 @@ figcaption {
         position: relative;
     }
 
-    .journey_bg1 {
+    .design_baggrund1 {
         width: 120%;
     }
 
-    .journey_bg2 {
-        width: 100%;
-
-    }
-
-    .journey_wrap {
-        width: 100%;
-        grid-column: 2/2;
-
-    }
-
-    .journey_intro {
+    .design_intro {
         padding-left: 250px;
         width: 100%;
         margin: 0px;
-
     }
 
-    .journey_img {
+    .design_process_wrap {
+        width: 100%;
+        grid-column: 2/2;
+    }
+
+
+    .design_baggrund2 {
+        width: 100%;
+    }
+
+
+    .design_process_img {
         position: absolute;
         left: 220px;
         top: 60px;
         width: 50%;
     }
+
+
+
+
+
 
 
     .journey_beskrivelse {
