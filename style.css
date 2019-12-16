@@ -172,7 +172,7 @@ p {
     }
 
     article {
-        padding: 0 100px;
+        padding: 0 200px;
     }
 
     /* TEMA/SEKTION STYLING */
@@ -262,24 +262,18 @@ p {
 
     #forside {
         width: 100%;
-        height: 100vh;
+        height: 95vh;
     }
-
-    /* .intro_img {
-        width: auto;
-        height: 85vh;
-        margin-left: 130px;
-    }*/
 
     .video_wrap {
         display: flex;
         justify-content: flex-end;
         display: inherit;
-
     }
 
     video {
         width: 100%;
+        height: 90%;
     }
 
     .intro_frida {
@@ -289,29 +283,31 @@ p {
 
     .intro_portraet {
         position: absolute;
-        right: 150px;
+        right: -50px;
         top: 100px;
-
     }
 
-    .intro_portraet img {
-        width: 300px;
-    }
-
-    .intro_info {
-        text-align: right;
-    }
 
     .intro_portraet img:last-of-type {
         width: 100px;
         float: right;
     }
 
+
+    .intro_portraet img {
+        width: 280px;
+    }
+
+    .intro_info {
+        text-align: right;
+    }
+
+
     .pil {
         width: 100%;
         display: flex;
         justify-content: center;
-        bottom: 8px;
+        bottom: 75px;
         animation-name: puls;
         animation-duration: .9s;
         animation-iteration-count: infinite;
@@ -322,7 +318,7 @@ p {
     }
 
     .pil img {
-        width: 50px;
+        width: 40px;
     }
 
     @keyframes puls {
@@ -350,11 +346,9 @@ p {
     }
 
 
-
     .test_images img {
         width: 400px;
     }
-
 
 
 
@@ -379,21 +373,26 @@ p {
         text-decoration: none;
         writing-mode: vertical-lr;
         font-family: 'Be Vietnam';
-        font-weight: bold;
-        font-size: 5rem;
+        font-weight: bolder;
+        font-size: 6rem;
         color: #6F8D75;
-
+        padding-left: 5px;
+        padding-bottom: 20px;
 
     }
+
 
     .menu_designet {
         grid-column: 2 / 4;
         grid-row: 1 / 1;
         text-decoration: none;
         font-family: 'Be Vietnam';
-        font-size: 5rem;
+        font-size: 7rem;
         color: transparent;
         -webkit-text-stroke: 3px #6F8D75;
+        line-height: 0.6;
+
+
     }
 
     .menu_story {
@@ -412,8 +411,11 @@ p {
         text-align: right;
         text-decoration: none;
         font-family: 'Be Vietnam';
+        font-weight: 600;
         font-size: 5rem;
         color: #6F8D75;
+        line-height: 95%;
+        padding: 0px 10px 20px 0px;
     }
 
     /* STORY */
