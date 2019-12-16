@@ -46,7 +46,7 @@
             <img class="billede" src="" alt="">
             <div class="middle">
                 <h2 class="titel"></h2>
-                <a class="link" href=""></a>
+                <a class="link" href="" target="_blank"></a>
             </div>
         </article>
     </template>
@@ -98,6 +98,8 @@
                     klon.querySelector(".titel").textContent = pres.title.rendered;
 
                     klon.querySelector(".link").href = pres.link;
+
+                    klon.querySelector(".link").textContent = pres.link;
 
                     visning.appendChild(klon);
                 }
