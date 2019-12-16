@@ -129,6 +129,15 @@ p {
     margin: 100px auto 10px;
 }
 
+.forhandler_formular a {
+    color: white;
+    font-family: 'Be Vietnam';
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+
 .insta img {
     width: 6%;
     padding: 20px 0px 20px;
@@ -564,15 +573,6 @@ p {
         grid-column: 1 /4;
 
     }
-
-    .forhandler_formular a {
-        color: white;
-        font-family: 'Be Vietnam';
-        font-weight: 500;
-        text-decoration: none;
-        font-size: 1.2rem;
-    }
-
 
 
     /* DIT GRØNNE AFTRYK */

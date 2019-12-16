@@ -72,7 +72,7 @@
         async function hentJson() {
             const response = await fetch(presseUrl);
             presse = await response.json();
-
+            console.log(presse);
             visPresse();
         }
 
@@ -80,14 +80,14 @@
             visning.innerHTML = "";
 
             presse.forEach(pres => {
-                console.log(presse);
+
                 const klon = template.cloneNode(true).content;
 
-                klon.querySelector(".billede").src = pres.billede[0].guid;
+                klon.querySelector(".billede").src = pres.billede.guid;
 
-                //                klon.querySelector(".titel").textContent = presse.title.rendered;
-                //
-                // klon.querySelector(".link").href = presse.link;
+                klon.querySelector(".titel").textContent = pres.title.rendered;
+
+                klon.querySelector(".link").href = pres.link;
 
                 visning.appendChild(klon);
             });
