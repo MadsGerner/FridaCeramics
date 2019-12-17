@@ -121,7 +121,7 @@ figcaption {
 
 .logo {
     position: fixed;
-    width: 5%;
+    width: 6%;
 }
 
 #main_nav {
@@ -138,8 +138,8 @@ figcaption {
     display: block;
     position: absolute;
     position: fixed;
-    top: 20px;
-    right: 40px;
+    top: 8px;
+    right: 8.5px;
 
 
     z-index: 1;
@@ -147,6 +147,7 @@ figcaption {
     -webkit-user-select: none;
     user-select: none;
 }
+
 
 #menuToggle input {
     display: block;
@@ -176,7 +177,7 @@ figcaption {
     margin-bottom: 5px;
     position: relative;
 
-    background: green;
+    background: #6F8D75;
     border-radius: 3px;
 
     z-index: 1;
@@ -233,7 +234,7 @@ figcaption {
     margin: -100px 0 0 0;
     padding: 10px;
     padding-top: 100px;
-    right: -100px;
+    right: -20px;
 
     background: lightgray;
     list-style-type: none;
@@ -247,6 +248,10 @@ figcaption {
 }
 
 #menu li {
+    font-family: 'Be Vietnam';
+    color: #6F8D75;
+    text-transform: uppercase;
+    text-decoration: none;
     padding: 10px 0;
     font-size: 22px;
 }
@@ -255,6 +260,7 @@ figcaption {
  * And let's fade it in from the left
  */
 #menuToggle input:checked ~ ul {
+    text-decoration: none;
     transform: scale(1.0, 1.0);
     opacity: 1;
 }
@@ -514,8 +520,8 @@ button:active {
 
     .logo {
         position: fixed;
-        width: 5%;
-        padding: 15px 5px 20px;
+        width: 6%;
+        padding: 20px 5px 15px 15px;
     }
 
     a.presse,
@@ -894,8 +900,9 @@ button:active {
         text-decoration: none;
     }
 
-    .afsnit_eu a:hover {
-        color: #AC5364
+    .afsnit_eu a p:hover {
+        color: #AC5364;
+        cursor: pointer;
     }
 
     .so_me_billede {
