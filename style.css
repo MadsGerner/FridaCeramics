@@ -972,11 +972,11 @@ button:active {
     #faq {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-auto-rows: 1fr 1fr;
+        grid-auto-rows: auto;
         grid-gap: 80px;
         max-width: 950px;
         margin: 0 auto;
-
+        padding: 0;
     }
 
     /* ------------ FOOTER  -------------------*/
