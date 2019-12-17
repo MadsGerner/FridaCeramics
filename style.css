@@ -123,7 +123,13 @@ figcaption {
     width: 5%;
 }
 
-.logo:hover {}
+#main_nav {
+    display: none;
+}
+
+#onepage_nav a {
+    display: none;
+}
 
 
 
@@ -137,6 +143,10 @@ figcaption {
 
 .video_wrap {
     grid-column: 1;
+    width: 100%;
+}
+
+video {
     width: 100%;
 }
 
@@ -259,6 +269,14 @@ figcaption {
     }
 
     /* ---------- HEADER, LOGO & NAV samt-----------  */
+
+
+    #onepage_nav a {
+        display: grid;
+    }
+
+
+
     /*----------NAVIGATION (SECTIONS MENU)-------- */
 
 
@@ -698,10 +716,19 @@ figcaption {
 
     .visning {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 2fr);
         grid-gap: 20px;
 
     }
+
+    .kolonne_1 {
+        grid-column: 1;
+    }
+
+    .kolonne_2 {
+        grid-column: 2;
+    }
+
 
     /*
     #presseTemplate {
