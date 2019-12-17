@@ -43,6 +43,7 @@ h3 {
     width: 70%;
     margin: auto;
     font-size: 1.5rem;
+    font-weight: 400;
     padding: 50px;
 }
 
@@ -227,7 +228,7 @@ figcaption {
         padding: 0 200px;
     }
 
-    /* ---------------- TEMA OG SECTIONS STYLING -------- */
+    /* ------------ TEMA OG SECTIONS STYLING -------- */
 
     .sektion_bg {
         background-image: url(image/section_baggrund.png);
@@ -249,11 +250,11 @@ figcaption {
         margin: 0;
     }
 
-    /* ------------------ FONT STYLING --------------- */
+    /* ---------------- FONT STYLING --------------- */
 
     h1 {
         -webkit-text-stroke: 2px #6F8D75;
-        font-size: 5rem;
+        font-size: 6rem;
 
     }
 
@@ -415,7 +416,7 @@ figcaption {
         width: 100%;
         display: flex;
         justify-content: center;
-        bottom: 75px;
+        bottom: 45px;
         animation-name: puls;
         animation-duration: .9s;
         animation-iteration-count: infinite;
@@ -440,6 +441,7 @@ figcaption {
     }
 
     .pil:hover {
+        cursor: pointer;
         animation-name: pulsStop;
     }
 
