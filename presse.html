@@ -163,12 +163,6 @@
         function filtrering() {
             filter = this.dataset.kategori;
 
-            // knapperne skifter farve
-            document.querySelectorAll(".filter").forEach(elm => {
-                elm.classList.remove("filter_valgt");
-            })
-            this.classList.add("filter_valgt");
-
             visPresse();
         }
     </script>
