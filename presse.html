@@ -20,7 +20,7 @@
             </nav>
         </div>
         <a href="index.html#onepage_nav">
-            <img class="logo" src="image/logo.png" alt="logo">
+            <img class="logo" src="image/logogroen.png" alt="logo">
         </a>
     </header>
 
@@ -70,9 +70,9 @@
 
         <section id="knapper">
             <button class="filter filter_valgt" data-kategori="alle">ALLE</button>
-            <button class="filter" data-kategori="Artikler">ARTIKLER</button>
-            <button class="filter" data-kategori="Video">VIDEO</button>
-            <button class="filter" data-kategori="Podcat">PODCAST</button>
+            <button class="filter" data-kategori="artikler">ARTIKLER</button>
+            <button class="filter" data-kategori="video">VIDEO</button>
+            <button class="filter" data-kategori="podcast">PODCAST</button>
             <button class="filter" data-kategori="designmanual">DESIGNMANUAL</button>
         </section>
 
@@ -81,7 +81,7 @@
     <div class="visning"></div>
 
 
-    <template id="presseTemplate">
+    <template id="presse_template">
         <article class="presse">
             <img class="billede" src="" alt="">
             <div class="middle">
@@ -116,14 +116,17 @@
         let presse = [];
         let filter = "alle";
 
-        const template = document.querySelector("#presseTemplate");
+        const template = document.querySelector("#presse_template");
         const visning = document.querySelector(".visning");
 
-
+        //Hent JSON fil i asynkron funktion
         async function hentJson() {
+            //Henter data filen
             const response = await fetch(presseUrl);
+            //Den hentede data tolkes som data
             presse = await response.json();
             console.log(presse);
+            //Kald funktionen der viser data i DOM
             visPresse();
             knapperVirker();
         }
@@ -168,8 +171,5 @@
 
             visPresse();
         }
-
     </script>
-</body>
-
-</html>
+</body></html>
