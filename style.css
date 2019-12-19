@@ -319,22 +319,23 @@ video {
 }
 
 
-.forhandler_formular {
+.button_formular {
+    display: flex;
     background-color: #6F8D75;
     border: none;
-    /*
-    width: 210px;
-    height: 70px;
-    margin: 100px auto;
-*/
+    width: 200px;
     cursor: pointer;
-    /*    z-index: 100;*/
+    z-index: 100;
+    justify-content: center;
+    padding: 15px;
+}
+
+.button_formular a {
     color: white;
     font-family: 'Be Vietnam';
     font-weight: 500;
     text-decoration: none;
     font-size: 1.2rem;
-    padding: 15px
 }
 
 
@@ -906,17 +907,11 @@ footer {
     }
 
 
-    .forhandler_formular {
-        /*
-        grid-column: 1 /4;
-        margin: 15px;
-        padding: 15px;
-*/
+    .button_formular {}
 
-    }
-
-    .forhandler_formular a:hover {
+    .button_formular a {
         color: white;
+
     }
 
 
