@@ -43,11 +43,11 @@ h3 {
     font-family: 'Be Vietnam';
     color: #6F8D75;
     text-align: center;
-    width: 70%;
+    width: 100%;
     margin: auto;
     font-size: 1.5rem;
     font-weight: 400;
-    padding: 50px;
+    padding: 0px 50px 50px;
 }
 
 
@@ -100,7 +100,7 @@ figcaption {
 .sektion_bg {
     background-image: url(image/section_baggrund.png);
     width: 100%;
-    height: 450px;
+    height: 300px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -108,7 +108,7 @@ figcaption {
 
 .sektion_bg h1 {
     text-align: center;
-    padding-top: 120px;
+    padding-top: 60px;
     padding-bottom: 0px;
     margin: 0;
 }
@@ -281,10 +281,11 @@ figcaption {
 .video_wrap {
     grid-column: 1;
     width: 100%;
+    overflow: hidden;
 }
 
 video {
-    width: 100%;
+    width: 200%;
 }
 
 
@@ -468,10 +469,11 @@ footer {
 
 
 .email {
-    padding: 20px 0px 0px 20px;
+    /*    padding: 20px 0px 0px 20px;*/
     font-family: 'Be Vietnam';
     color: #6F8D75;
     text-decoration: none;
+    margin: auto;
 }
 
 .copyright {
@@ -495,6 +497,11 @@ footer {
 
     article {
         padding: 0 200px;
+    }
+
+    h3 {
+        width: 70%;
+        padding: 50px;
     }
 
     /* ------------ TEMA OG SECTIONS STYLING -------- */
@@ -1052,14 +1059,15 @@ footer {
 
 
     .email {
-        padding: 20px 0px 5px 20px;
+        padding: 5px 0px 5px 20px;
         font-family: 'Be Vietnam';
         color: #6F8D75;
         text-decoration: none;
     }
 
     .copyright {
-        padding: 5px 0px 5px 80px;
+        padding: 5px 0px 5px 60px;
+        margin: 16px auto;
     }
 
 }
