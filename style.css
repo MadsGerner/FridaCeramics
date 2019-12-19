@@ -321,11 +321,13 @@ video {
 .forhandler_formular {
     background-color: #6F8D75;
     border: none;
+    /*
     width: 210px;
     height: 70px;
     margin: 100px auto;
+*/
     cursor: pointer;
-    z-index: 100;
+    /*    z-index: 100;*/
     color: white;
     font-family: 'Be Vietnam';
     font-weight: 500;
@@ -888,7 +890,7 @@ footer {
     }
 
     .bestil_wrapper p {
-        padding-top: 114px;
+        padding-top: 100px;
     }
 
 
@@ -904,9 +906,11 @@ footer {
 
 
     .forhandler_formular {
+        /*
         grid-column: 1 /4;
         margin: 15px;
         padding: 15px;
+*/
 
     }
 
